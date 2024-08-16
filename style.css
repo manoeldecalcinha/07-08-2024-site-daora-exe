@@ -18,7 +18,7 @@ body{
     font-size: 16px;
 }
 .cabecalho{
-    background-color:var(--branco);
+    background-color:var(--preto);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,12 +32,42 @@ body{
 .cabecalho-nav__link{
     text-decoration: none;
     font-family: var(--fonte-titulo);
-    font-size: 24px;
+    font-size: 30px;
     color: var(--branco);
     margin-right: 24px;
 }
-.cabecalho-nav__link.hover{
-    color: var(--brancoescuro);
+.cabecalho-nav__link:hover{
+    color: var(--vermelhoclaro);
     font-size: 46px;
     transition: 0.3;
 }
+.principal_capa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-image: url(imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    padding: 24px 12px;
+}  
+.principal-capa__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.principal-capa__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: var(--preto);
+    margin-bottom: 12px;
+}
+.principal-capa__texto{
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+
+
+
+
