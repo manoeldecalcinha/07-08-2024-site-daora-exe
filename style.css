@@ -1,55 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
---preto: #0a100dff;
---brancoescuro: rgba(228, 229, 204, 0.805);
---branco: rgb(255, 255, 255);
---vermelhoclaro: #a22c29ff;
---vermelhoescuro: #902923ff;
---verde: #386641ff;
---fonte-titulo:"Radio Canada Big", sans-serif;
---fonte-texto: "Lora", serif;
+:root {
+    --preto: #0a100dff;
+    --brancoescuro: rgba(228, 229, 204, 0.805);
+    --branco: rgb(255, 255, 255);
+    --vermelhoclaro: #a22c29ff;
+    --vermelhoescuro: #902923ff;
+    --verde: #386641ff;
+    --fonte-titulo: "Radio Canada Big", sans-serif;
+    --fonte-texto: "Lora", serif;
 }
 
-body{
+body {
     background-color: var(--vermelhoescuro);
     font-family: var(--fonte-titulo);
     font-size: 16px;
 }
 
-.cabecalho{
-    background-color:var(--verde);
+.cabecalho {
+    background-color: var(--verde);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px;
 }
 
-.cabecalho-img{
+.cabecalho-img {
     width: 10%;
     border-radius: 50%;
 }
 
-.cabecalho-nav__link{
+.cabecalho-nav__link {
     text-decoration: none;
     font-family: var(--fonte-titulo);
     font-size: 30px;
     color: var(--branco);
-    margin-right: 24px;
-}
-
-.cabecalho-nav__link:hover{
-    color: var(--vermelhoclaro);
     font-size: 46px;
     transition: 0.3;
 }
 
-.principal_capa{
-    display:flex;
+.principal_capa {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -59,25 +55,46 @@ body{
     padding: 24px 12px;
 }
 
-.principal-capa__conteudo{
+.principal-capa__conteudo {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.principal-capa__titulo{
+.principal-capa__titulo {
     font-family: var(--fonte-titulo);
     font-size: 32px;
     color: var(--branco);
     margin-bottom: 12px;
 }
 
-.principal-capa__texto{
+.principal-capa__texto {
     font-size: 24px;
     margin-top: 24px;
 }
 
-.principal-capa__imagem{
+.principal-capa__imagem {
     border-radius: 10% 10% 10% 10%;
     margin-left: 100%;
+}
+
+.principal-capa__combotao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.principal-capa__botao {
+    background-color: var(--verde);
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 2em;
+    color: var(--vermelhoclaro);
+    text-decoration: none;
+}
+
+.principal-capa__botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--preto);
+    color: var(--branco)
 }
